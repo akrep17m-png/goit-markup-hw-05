@@ -40,6 +40,43 @@
                     <h1 class="title">Effective Solutions
                         for Your Business</h1>
                     <button class="order-button" type="button">Order Service</button>
+
+                    <div class="modal-overlay is-open">
+                        <div class="modal">
+                            <form class="modal-form" name="order_form" autocomplete="off" novalidate>
+                                <button class="form-button" type="button">Send</button>
+                                
+                                <fieldset class="form-group">
+                    
+                                    <legend class="group-title">Leave your contacts and we will call you back
+                                    </legend>
+                                
+                                <div class="form-field">
+                                    <label class="form-label">Name
+                                        <input class="form-input" type="text" name="name" />
+                                    </label>
+                                    <label class="form-label">Phone
+                                        <input class="form-input" type="tel" name="phone_number" />
+                                    </label>
+                                    <label class="form-label">
+                                        Email
+                                        <input class="form-input" type="email" name="email" />
+                                    </label>                                
+                                    <label class="form-label">
+                                        Comment
+                                        <textarea class="form-input" name="comment" placeholder="Text input" rows="5"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" name="police-privace" value="check" id="police-privace">
+                                    <label class="check-text" for="police-privace">I accept the terms and conditions of the Privacy Policy</label>
+                                </div>
+                                </fieldset>
+                                
+                                <button class="form-button" type="submit">Send</button>                            
+                            </form>
+                        </div>
+                    </div>
                 </div>
         </section>
 

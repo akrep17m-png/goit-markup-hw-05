@@ -237,6 +237,130 @@ SECTION HERO
 .order-button:focus {
     background-color: #404BBF;
 }
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    max-width: 408px;
+    max-height: 584px;
+}
+
+.modal 
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.modal 
+.modal-form
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+
+    border: none;
+    width: 360px;
+    height: 336px;
+    padding: 0;
+    margin: 0;
+}
+
+.modal 
+.modal-form 
+.form-group 
+.group-title {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.modal 
+.modal-form 
+.form-group 
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.modal 
+.modal-form 
+.form-group 
+.form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-size: 12px;
+    color: #8e8f99;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+    width: 360px;
+    height: 58px;
+}
+
+.modal 
+.modal-form 
+.form-group
+.form-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+
+    padding: 8px 16px;
+}
+
+.modal .modal-form .form-group .form-input:focus {
+    outline: 1px solid #4d5ae5;
+}
+
+.modal .modal-form .form-group .form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+    color: #8e8f99;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
 /* 
 SECTION TWO 
 */
