@@ -883,6 +883,9 @@ PAGE FOOTER
 .form-input:focus-within + .icon {
     fill: #4d5ae5;
 }
+.modal .modal-form .textarea-box {
+    margin-bottom: 16px;
+}
 
 .modal 
 .modal-form 
@@ -900,7 +903,6 @@ PAGE FOOTER
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
-    margin-bottom: 16px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
