@@ -30,6 +30,10 @@ img {
     max-width: 100%;
 }
 
+textarea {
+    resize: none;
+}
+
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -346,11 +350,17 @@ SECTION HERO
     padding: 8px 16px;
 }
 
-.modal .modal-form .form-group .form-input:focus {
+.modal 
+.modal-form 
+.form-group 
+.form-input:focus {
     outline: 1px solid #4d5ae5;
 }
 
-.modal .modal-form .form-group .form-checkbox {
+.modal 
+.modal-form 
+.form-group 
+.form-checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -359,6 +369,41 @@ SECTION HERO
     color: #8e8f99;
     line-height: 1.17;
     letter-spacing: 0.04em;
+}
+
+.modal 
+.modal-form 
+.form-button {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+        
+    border-radius: 4px;
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+            /* TYPOGRAPHY */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #fff;
+    background: #4d5ae5;
+        
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal .modal-form .form-button:hover,
+.modal .modal-form .form-button:focus {
+    background-color: #404BBF;
 }
 
 /* 
