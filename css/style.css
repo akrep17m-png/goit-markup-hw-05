@@ -281,6 +281,32 @@ SECTION HERO
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    position: relative;
+}
+
+.modal 
+.modal-form
+.close-btn {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-self: self-end;
+    position: relative;
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal .modal-form .close-btn:hover,
+.modal .modal-form .close-btn:focus {
+    background-color: #404BBF;
+    fill: #fff;
 }
 
 .modal 
@@ -328,6 +354,7 @@ SECTION HERO
     display: flex;
     flex-direction: column;
     gap: 4px;
+    position: relative;
 
     font-size: 12px;
     color: #8e8f99;
@@ -340,6 +367,32 @@ SECTION HERO
 
 .modal 
 .modal-form 
+.form-group 
+.form-label 
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: self-start;
+    position: absolute;
+    
+    top: 29px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    fill: #000;
+}
+
+.modal 
+.modal-form 
+.form-group 
+.form-label:focus-within 
+.icon {
+    fill: #4d5ae5;
+}
+
+.modal 
+.modal-form 
 .form-group
 .form-input {
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -347,6 +400,16 @@ SECTION HERO
     width: 360px;
     height: 40px;
 
+    padding: 8px 38px;
+}
+
+.modal 
+.modal-form 
+.form-group
+.form-textarea {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
     padding: 8px 16px;
 }
 

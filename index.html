@@ -44,7 +44,11 @@
                     <div class="modal-overlay is-open">
                         <div class="modal">
                             <form class="modal-form" name="order_form" autocomplete="off" novalidate>
-                                <button class="close-btn" type="submit">Send</button>
+                                <button class="close-btn" type="submit">
+                                    <svg class="close-icon" width="8" height="8" viewBox="0 0 32 32">
+                                        <use href="./images/icons.svg#icon-closeblack"></use>
+                                    </svg>
+                                </button>
                                 
                                 <fieldset class="form-group">
                     
@@ -54,17 +58,26 @@
                                 <div class="form-field">
                                     <label class="form-label">Name
                                         <input class="form-input" type="text" name="name" />
+                                        <svg class="icon" width="12" height="12" viewBox="0 0 32 32">
+                                            <use href="./images/icons.svg#icon-blackpeople"></use>
+                                        </svg>
                                     </label>
                                     <label class="form-label">Phone
                                         <input class="form-input" type="tel" name="phone_number" />
+                                        <svg class="icon" width="12" height="12" viewBox="0 0 32 32">
+                                            <use href="./images/icons.svg#icon-tel"></use>
+                                        </svg>
                                     </label>
                                     <label class="form-label">
                                         Email
                                         <input class="form-input" type="email" name="email" />
+                                        <svg class="icon" width="12" height="12" viewBox="0 0 32 32">
+                                            <use href="./images/icons.svg#icon-emeil"></use>
+                                        </svg>
                                     </label>                                
                                     <label class="form-label">
                                         Comment
-                                        <textarea class="form-input" name="comment" placeholder="Text input" rows="9"></textarea>
+                                        <textarea class="form-textarea" name="comment" placeholder="Text input" rows="9"></textarea>
                                     </label>
                                 </div>
                                 <div class="form-checkbox">
