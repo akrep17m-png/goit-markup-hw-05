@@ -522,8 +522,6 @@ PAGE FOOTER
   margin-right: 120px;
 }
 
-.social-box {
-}
 .social-box-text {
   font-weight: 500;
   color: var(--white);
@@ -630,6 +628,7 @@ PAGE FOOTER
 
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -657,13 +656,10 @@ PAGE FOOTER
   padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  width: 408px;
+  max-width: 408px;
   min-height: 584px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -750,7 +746,7 @@ PAGE FOOTER
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus-within + .icon {
+.input-box:focus-within .icon {
   fill: var(--iris);
 }
 
@@ -836,7 +832,6 @@ PAGE FOOTER
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  padding: 0;
   margin-left: auto;
   margin-right: auto;
   /* TYPOGRAPHY */
@@ -851,5 +846,5 @@ PAGE FOOTER
 
 .form-button:hover,
 .form-button:focus {
-  background-color: var(--iris);
+  background-color: var(--ocean);
 }
