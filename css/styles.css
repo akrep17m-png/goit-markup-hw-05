@@ -558,7 +558,7 @@ PAGE FOOTER
 }
 
 .subscribe-wrapper {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-text {
@@ -592,7 +592,7 @@ PAGE FOOTER
 
 .subscribe-input:hover,
 .subscribe-input:focus {
-  border-color: var(--iris);
+  border-color: var(--green);
 }
 
 .subscribe-input::placeholder {
@@ -606,7 +606,7 @@ PAGE FOOTER
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
-  background-color: var(--ocean);
+  background-color: var(--iris);
   display: flex;
   align-items: center;
   justify-content: center;
